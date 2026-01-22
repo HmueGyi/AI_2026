@@ -90,9 +90,18 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 
 # Environment အသစ်ဖန်တီးပါ
-conda create -n env_isaaclab python=3.10
+conda create -n env_isaaclab python=3.11
 conda activate env_isaaclab
+
 pip install --upgrade pip
+pip install -U torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+pip install "isaacsim[all,extscache]==5.1.0" --extra-index-url https://pypi.nvidia.com
+
+pip install -e source/isaaclab
+pip install git+https://github.com/leggedrobotics/rsl_rl.git
+pip install h5py
+pip install hydra-core
+pip install tensorboard
 ```
 
 ### ၃.၂ Isaac Lab Repository Clone လုပ်ရန်
