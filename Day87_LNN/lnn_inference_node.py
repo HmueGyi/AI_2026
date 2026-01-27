@@ -69,9 +69,9 @@ class LNNModel(nn.Module):
         self.wiring = AutoNCP(units=lnn_units, output_size=output_size)
         
         if use_cfc:
-            self.lnn = CfC(input_size=feature_dim, wiring=self.wiring)
+            self.lnn = CfC(feature_dim, self.wiring)
         else:
-            self.lnn = LTC(input_size=feature_dim, wiring=self.wiring)
+            self.lnn = LTC(feature_dim, self.wiring)
         
         self.hidden = None
         
