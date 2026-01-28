@@ -1,0 +1,11 @@
+pip freeze | python3 -c "
+import sys, re
+for l in sys.stdin:
+    if '==' in l:
+        pkg, ver = l.strip().split('==')
+        m = re.match(r'(\d+\.\d+)', ver)
+        if m:
+            print(f'{pkg}~={m.group(1)}')
+        else:
+            print(l.strip())
+" > requirements.txt
