@@ -109,3 +109,48 @@
     - ဒီနေရာမှာ infinite series --> game ( forever loop ) --> sum of rewards ဖြစ်ပါတယ်။ gamma တန်ဖိုးသည် 0 နဲ့ 1 ကြားရှိပြီး Geometric Series မို့လို့ $$R_{\text{max}} + \gamma R_{\text{max}} + \gamma^2 R_{\text{max}} + \dots = \frac{R_{\text{max}}}{1-\gamma}, \quad 0 \le \gamma < 1$$ ဖြစ်ပါတယ်။ 
     - ဒီမှာဆို နောက်ပိုင်း reward တွေက လျော့လျော့သွားမှာဆိုတော့ Agent သည် သူနဲ့အနီးဆုံးသော $R_{\text{max}}$ ကို ပဲ အာရုံစိုက်မှာဖြစ်ပြီး ကျန်တာကတော့ အနည်းငယ်ပဲဖြစ်ပါလိမ့်မယ်။
     - ပြန်ချုပ်ရရင် Infinite reward တွေရနိုင်တဲ့ အနေအထားမျိုးမှာ Disconuted Rewards ကို သုံးတယ်ဆိုတာပါပဲ။
+
+- #### Optimal Policy vs Utility
+    - Policy ဆိုတာ State က နေ Action ကို mapping လုပ်ပေးတာ
+    - Optimal Policy = $\pi^*$ , အချိန်အားလုံးအတွက် Reward Maximize လုပ်တာပါ။
+    - $$\pi^* = \arg\max_{\pi} \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t) \mid \pi \right]$$
+    - Utility ဆိုတာကတော့ state တစ်ခုချင်းစီက တန်ဖိုးပါပဲ။ 
+    - $$U^\pi(s) = \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t) \mid \pi, s_0 = s \right]$$
+    - reward က ခုချက်ချင်းရတဲ့ဟာ
+    - Utility ဆိုတာကတော့ Long Term ကို သွားတယ်။
+
+- #### Bellman Optimality Equation Introduction
+    - ( Optimal Policy ) $\pi$(s) --> state , ဘယ်အခြေအနေ ဘယ် state မဆို Action ကို အကောင်းဆုံးလုပ်ရမလဲ? ( Best Policy )
+    - $$\pi^*(s) = \arg\max_{a} \sum_{s'} T(s, a, s') \cdot U^{\pi^*}(s')$$
+    - equation ရဲ့ အဆုံးပိုင်းဖြစ်တဲ့ နောက်ထပ် next step ရဲ့ Utility ပါဝင်တယ်။ အဲ့ကောင်က next step to next step သိချင်နေတယ်ဆိုပြီးမှာကို မဟုတ်တော့ဘူး။
+    - အဲ့တော့ Bellman equation for Optimal Utility
+    - $$U^*(s) = R(s) + \gamma \max_{a} \sum_{s'} T(s, a, s') U^*(s')$$
+    - ပထမပိုင်း $R(s)$ က reward, နောက်က ကောင်တွေကတော့ နောက်ထပ်လာမဲ့ state ရဲ့ expected utility ပေါ့။  
+
+- #### Bellman Recursive Defination
+    - Bellman equation မှာ Reward, Probability, action, Utility အပိုင်းတွေပါဝင်ပါတယ်။ 
+    - သူ့ကို Utility သက်သက်မသုံးဘဲ Optimal Policy ပါသုံးရင် equation ကို အောက်ပါအတိုင်းရေးပါမယ်၊
+    - n states, n equations
+    - **Expected Utility:**
+    - $$U^\pi(s) = \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t) \mid \pi, s_0 = s \right]$$
+
+    - **Optimal Policy:**
+    - $$\pi^*(s) = \arg\max_{a} \sum_{s'} T(s, a, s') U^*(s')$$
+
+    - **Bellman Optimality Equation:**
+    - $$U^*(s) = R(s) + \gamma \max_{a} \sum_{s'} T(s, a, s') U^*(s')$$
+    - bellman equation က ဘာပြောချင်တာလဲဆိုတော့ recursively ဖြစ်ပြီး state  တွေရဲ့ Utility ပေါ့။
+
+- #### MDP Terminal State
+    - java ဥပမာနဲ့ 
+    - T($s_{terminal}$, a , s' ) = 0 , ဆိုလိုတာက terminal end point ရောက်ပြီးကာမှ ထပ်ရွှေ့ရင် zero
+
+- #### MDP BURLAP Interfaces
+    - 1.SA Domain ( single angent domain ) သူ့ထဲမှာ store တာက state, action, transition dynamics, reward
+    - 2.State interface  --> Grid world state ( x, y , obstacles )
+    - 3.Action interface --> N, S, W, E ( Simple Action )
+    - 4.Action Type      -->  generate Actions
+
+- #### Sample Model, Full Model
+
+- #### Environment Outcomes, Transition Probabilities
