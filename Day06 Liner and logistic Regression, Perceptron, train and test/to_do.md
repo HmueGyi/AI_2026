@@ -32,3 +32,8 @@
 
 #### နမူနာ code
 - [[ Social Network Ads   ]](https://www.kaggle.com/datasets/rakeshrau/social-network-ads): လူတစ်ယောက်ရဲ့ အသက်နဲ့ ဝင်ငွေအပေါ် မူတည်ပြီး လူမှုကွန်ရက်ပေါ်က ကြော်ငြာကို ကြည့်ပြီး ပစ္စည်းဝယ်မဝယ် ခန့်မှန်းရတာ ဖြစ်ပါတယ်။
+
+### Photos
+- [Linear Regression](https://drive.google.com/drive/folders/1-DFnxiEne2m6R_XmUfFDhLOpW2U-tHhA?usp=drive_link)
+- [Logistic Regression](https://drive.google.com/drive/folders/1VV4Zo_3JuLThinnJnEDUafLVU4bKdMtN?usp=drive_link)
+- [Perceptron algorithm](https://drive.google.com/drive/folders/1oP6L56cFlELkOUXS10g7FuQdN-ZlyjZJ?usp=drive_link)
