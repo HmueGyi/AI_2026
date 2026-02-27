@@ -1,20 +1,24 @@
 ### သင်တန်းသားများလေ့ကျင့်ရန်
 
-#### Naive Bayes Classifier
 
-- [[ Iris Dataset  ]](https://www.kaggle.com/datasets/vikramamin/iris-dataset): Naive Bayes အလေ့အကျင့်အတွက် အကောင်းဆုံး အစတင်သည့် Dataset ပါ။ ပန်းချီ၏ အရွယ်အစား တွေအပေါ်မူတည်ပြီး ပန်းချီအမျိုးအစားကို ခွဲခြားရမှာပါ။
+#### Naive Bayes (Advanced / real-world datasets)
 
-- [[ Spam or Not Spam (SMS Collection)  ]](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset): SMS သတင်းများကို ကြည့်ပြီး အန္တရာယ်ကင်းတဲ့ သတင်း (Ham) အဖြစ်ရှိမရှိ သို့မဟုတ် အန္တရာယ်ရှိတဲ့ သတင်း (Spam) အဖြစ်ရှိမရှိ ခွဲခြားရမှာပါ။ Naive Bayes ၏ အကောင်းဆုံးအသုံးပြုမှု Dataset တစ်ခုပါ။
+- [[Language identification datasets]](https://www.kaggle.com/datasets/zarajamshaid/language-identification-datasst): ဘာသာစကားတစ်ခုစီတွင် ပါဝင်သော စကားလုံးများ၏ Frequency ပေါ်မူတည်၍ Multinomial NB ဖြင့် Language Classification ပြုလုပ်နိုင်ပါသည်။ အကယ်၍ စာသားသည် အလွန်တိုတောင်းပြီး စကားလုံးပါဝင်မှု ရှိ/မရှိ (0/1) ကိုသာ ကြည့်လိုလျှင် Bernoulli NB ကို ပြောင်းလဲအသုံးပြုနိုင်ပါသည်။
 
-- [[ Email Spam Detection  ]](https://www.kaggle.com/datasets/sandysan/emails): အီးမေးလ်များကို ကြည့်ပြီး Spam အီးမေးလ်ဖြစ်မဖြစ် ခွဲခြားရမှာပါ။ Text Classification အတွက် အကောင်းဆုံးစာသုံးအချက်အလက် Dataset ပါ။
+- [[Bank Customer Churn Prediction]](https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction): ဘဏ်ဖောက်သည်များ ဆက်လက်အသုံးပြုခြင်း ရှိ၊ မရှိကို ခန့်မှန်းရသည့် dataset ဖြစ်သည်။ Geography နှင့် Gender ကဲ့သို့သော Category features များအတွက် Categorical NB ကို လည်းကောင်း၊ အသက် (Age) နှင့် လက်ကျန်ငွေ (Balance) ကဲ့သို့သော Continuous features များအတွက် Gaussian NB ကို လည်းကောင်း ပေါင်းစပ်အသုံးပြုနိုင်ပါသည်။
 
-- [[ Movie Reviews Sentiment Analysis  ]](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews): ရုပ်ရှင်ခွင့်ပြုချက်များကို ကြည့်ပြီး အပြုသဘောဆောင်သည့် (Positive) သို့မဟုတ် အနှုတ်သဘောဆောင်သည့် (Negative) ခွဲခြားရမှာပါ။ Naive Bayes သည် Text Sentiment Analysis အတွက် ခြင်းခွခြင်းအကောင်းဆုံး Algorithm ပါ။
+- [[Spam Email Dataset]](https://www.kaggle.com/datasets/abdmental01/email-spam-dedection): အီးမေးလ်များအတွင်းရှိ စကားလုံးများ၏ အကြိမ်ရေ (Word frequencies) ကို အခြေခံထားသည့် CSV dataset ဖြစ်သည်။ Multinomial Naive Bayes ကို အသုံးပြု၍ Spam နှင့် Ham (သာမန်အီးမေးလ်) ကို အမြန်ဆုံးနှင့် အတိကျဆုံး ခွဲခြားနိုင်ပါသည်။
 
-- [[ NewsGroup Text Classification  ]](https://www.kaggle.com/datasets/crawford/20-newsgroups): အခန်းအမျိုးအစားများ အများအပြားတွင် သတင်းစာ အဖွဲ့အစည်းများကို ခွဲခြားရမှာပါ။ Multi-class Text Classification အတွက် အကောင်းဆုံး Dataset ပါ။
+- [[COVID-19 Patient Health Dataset]](https://www.kaggle.com/datasets/meirnizri/covid19-dataset): ဤ dataset တွင် လူနာများ၏ နောက်ခံရောဂါအခြေအနေများနှင့် ဆေးရုံတက်ရမှု အချက်အလက်များ ပါဝင်သည်။ ရောဂါလက္ခဏာ ရှိ/မရှိ (Binary features) များအတွက် Bernoulli NB ကို လည်းကောင်း၊ အသက် (Age) ကဲ့သို့သော Continuous data များအတွက် Gaussian NB ကို လည်းကောင်း အသုံးပြု၍ လူနာ၏ အခြေအနေ စိုးရိမ်ရမှု ရှိ/မရှိကို ခန့်မှန်းနိုင်ပါသည်
 
-- [[ Pima Indians Diabetes Database  ]](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database): လူနာတစ်ယောက်မှာ ဆီးချိုရောဂါ ရှိမရှိ ခွဲခြားခြင်း အတွက် Naive Bayes သုံးနိုင်ပါတယ်။
+- [[ Mobile Phone Price Prediction ]](https://www.kaggle.com/datasets/rkiattisak/mobile-phone-price): ဖုန်းများ၏ RAM၊ Storage၊ Screen Size နှင့် Camera specs များကဲ့သို့သော Continuous features များပါဝင်သည့် CSV dataset ဖြစ်သည်။ ကိန်းဂဏန်း တိုင်းတာချက်များ ဖြစ်သောကြောင့် Gaussian Naive Bayes ကို အသုံးပြု၍ ဈေးနှုန်းအဆင့်အတန်းကို ခန့်မှန်းရန် အထူးသင့်တော်ပါသည်။
 
+- [[Car Features and MSRP]]():ဤ CSV dataset တွင် ကားအမှတ်တံဆိပ်၊ အင်ဂျင်အမျိုးအစားနှင့် ဈေးနှုန်းများစွာ ပါဝင်သည်။ ကားအမှတ်တံဆိပ် အရေအတွက် မမျှတမှု (Imbalance) ရှိသောကြောင့် Complement NB ဖြင့် ကားအမျိုးအစား ခွဲခြားရန် အကောင်းဆုံးဖြစ်သည်။(Horsepower,MPG,MSRP) ကားတစ်စီး၏ အချက်အလက်များကို ရိုက်ထည့်လိုက်ရုံဖြင့် ၎င်းသည် မည်သည့်ကားအမျိုးအစား (ဥပမာ - Luxury, Performance) ဖြစ်သည်ကို ခန့်မှန်းခိုင်းခြင်းဖြင့် Manual Testing လုပ်ရန် အလွန်စိတ်ဝင်စားဖို့ကောင်းပါသည်။
 
 #### နမူနာ code
 
-- [[ Twitter Sentiment Analysis (Airline) ]](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment): Twitter စာသားများကို ကြည့်ပြီး အပြုသဘောဆောင်သည့်၊ အနှုတ်သဘောဆောင်သည့် သို့မဟုတ် ကင်းလွတ်သည့်အဖြစ် ခွဲခြားရမှာပါ။
+- [[Airline-sentiment-tweets]](https://www.kaggle.com/datasets/tango911/airline-sentiment-tweets): ဤ dataset သည် Twitter ပေါ်မှ US လေကြောင်းလိုင်းများနှင့် ပတ်သက်သည့် အသုံးပြုသူများ၏ လေကြောင်းလိုင်းအလိုက် ဝန်ဆောင်မှုများအပေါ် သဘောထားကို (positive)၊ (negative) သို့မဟုတ် (neutral) စသည်ဖြင့် Sentiment Analysis ပြုလုပ်ပြီး ခွဲခြားခန့်မှန်းရသည့် dataset တစ်ခု ဖြစ်ပါသည်။
+
+
+#### အသုံးပြုရန်
+- Model choices: `GaussianNB`, `MultinomialNB`, `BernoulliNB`,`ComplementNB`, `CategoricalNB` (scikit-learn)
