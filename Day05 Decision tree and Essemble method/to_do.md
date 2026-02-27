@@ -1,12 +1,12 @@
 ### သင်တန်းသားများလေ့ကျင့်ရန်
 
-- [[ YouTube Trending Videos (Kaggle) ]](https://www.kaggle.com/datasets/datasnaek/youtube-new): User interaction တွေ၊ Video category တွေနဲ့ Watch time တွေ ပါဝင်ပါတယ်။ "Recommended video ကို User က နှိပ်မလား (Click-through rate)" ဆိုတာကို Random Forest နဲ့ Predict လုပ်ကြည့်လို့ ရပါတယ်။
+- [[ Mr Beast Youtube Video Statistics (Kaggle) ]](https://www.kaggle.com/datasets/robikscube/mr-beast-youtube-video-statistics): User interaction တွေ၊ Video category တွေနဲ့ Watch time တွေ ပါဝင်ပါတယ်။ "Recommended video ကို User က နှိပ်မလား (Click-through rate)" ဆိုတာကို Random Forest နဲ့ Predict လုပ်ကြည့်လို့ ရပါတယ်။
 
 - [[ MovieLens Dataset ]](https://www.kaggle.com/datasets/ayushimishra2809/movielens-dataset): ဒါကတော့ Recommendation system လောကမှာ Standard ပါပဲ။ User တွေရဲ့ Rating တွေပေါ်မူတည်ပြီး နောက်ထပ် ဘယ်ကားကို ကြည့်မလဲဆိုတာကို Classify လုပ်နိုင်ပါတယ်။
 
 - [[ Bank Marketing Dataset (UCI) ]](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset): ဖောက်သည်တစ်ယောက်က ဘဏ်ရဲ့ ဝန်ဆောင်မှု (Term Deposit) ကို ဝယ်မလား၊ မဝယ်ဘူးလားဆိုတာကို Predict လုပ်ရတာပါ။ Feature တွေ အစုံပါလို့ Ensemble methods တွေရဲ့ စွမ်းဆောင်ရည်ကို ကောင်းကောင်းသိနိုင်ပါတယ်။
 
-- [[ E-commerce Customer Churn ]](https://www.kaggle.com/datasets/samuelsemaya/e-commerce-customer-churn): Shopping site တစ်ခုကနေ ဝယ်ယူသူက ထွက်သွားတော့မလား (Churn) ဒါမှမဟုတ် ဆက်သုံးမလားဆိုတာကို ခန့်မှန်းတဲ့ Project မျိုးပါ။
+- [[ E-commerce Customer Behavior Dataset ]](https://www.kaggle.com/datasets/uom190346a/e-commerce-customer-behavior-dataset): Shopping site တစ်ခုကနေ ဝယ်ယူသူက ထွက်သွားတော့မလား (Churn) ဒါမှမဟုတ် ဆက်သုံးမလားဆိုတာကို ခန့်မှန်းတဲ့ Project မျိုးပါ။
 
 - [[ Loan Approval Prediction ]](https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset): ချေးငွေလျှောက်ထားသူရဲ့ အချက်အလက်တွေ (Income, Credit History, Education) ကို ကြည့်ပြီး ချေးငွေ ခွင့်ပြုသင့်မသင့် ဆုံးဖြတ်တဲ့ Dataset ပါ။
 
