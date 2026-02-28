@@ -3,10 +3,10 @@
     - python rl framework
     - model တွေက decision ချနိုင်ဖို့
         - partially random
-        - partially control by agen
-    - discrete time မှာ အလုပ်လုပ်, state, action , new_state, reward
+        - partially control by agent
+    - discrete time မှာ အလုပ်လုပ် (time step တစ်ခုချင်းစီ), state, action , new_state, reward ကိုယူ
     - markov properties --> future သည် history ကို မမှီခိုပဲနဲ့ current state နဲ့ သူ့ကြောင့်ဖြစ်တဲ့ action ကို ပဲ မှီခိုတယ်။
-    - uncetrain environment မှာ plan ချဖို့ markov properties ရဲ့ အကူအညီနဲ့သွားမယ်။
+    - uncetrain environment မှာ agen ကို plan ချဖို့ markov properties ရဲ့ အကူအညီနဲ့သွားမယ်။
     - finite MDP ( limited လုပ်ထားတဲ့ state နဲ့ action )
     - MDP ရဲ့ အရေးကြီး Components ၄ ခု 
         - 1.  S = state
@@ -22,18 +22,20 @@
 
 - #### MDP ( S, T, A, R )
     - သူက environment တစ်ခုမှာ decision making လုပ်တဲ့ နည်းလမ်းတစ်ခုပဲ
-    - သူ့မှာ Sequence ( အကျိုးဆက် ဖြစ်မယ်။ )
+    - သူ့မှာ Sequential ( အကျိုးဆက် ဖြစ်မယ်။ )
     - Stochastic ( Probability ရှိမယ်။ )
-    - Goal Driven ဖြစ်မယ်။ ( reward တွေကြောင့် )
+    - Goal Driven ဖြစ်မယ်။ ( reward တွေကြောင့်/ agent ကိုလုပ်ရမဲ့ objective သတ်မှတ်ပေးရတာ)
     - နောက် အပိုင်း ၄ ခုမှာ ပထမဆုံးကတော့ State , s ပေါ့။ ဥပမာ 4x5 grid world မှာ ဆို state 12 ခုရှိတယ်။ 
+    agent က ဘယ် state ကိုရောက်နေရမလဲသိရမယ်။
     - နောက် Action, A(s)
+    ရောက်နေတဲ့ state မှာဘယ်လို action လုပ်မှာလဲ
     - တတိယတခုက Transition , သူ့ကို Model လို့လဲခေါ်တယ်။ Transition Model ပေါ့။ T (s,a,s') = P(s'|a,s)
     - Reward Function , R(s), R(s,a), R(s,a,s')
 
 - #### Policy
     - State ကနေပြီးတော့ action တစ်ခုကို သုံးရမယ်ဆိုရင် agent ကို ဘာလုပ်မလဲဆိုပြီးခိုင်းတာနဲ့ အတူတူပါပဲ။
     - တနည်းအားဖြင့် state ကနေ အကောင်းဆုံး Action တစ်ခုကို mapping လုပ်ပေးတာပဲ။ ( Structure )
-    - MTP Policy ရဲ့ Goal သည် final state ကို ရောက်ရုံတင်မဟုတ်ပဲ Maximum Reward Long term ရဖို့ဖြစ်တယ်။ ( Goal )
+    - MDP Policy ရဲ့ Goal သည် final state ကို ရောက်ရုံတင်မဟုတ်ပဲ Maximum Reward Long term ရဖို့ဖြစ်တယ်။ ( Goal )
     - နောက်သူ့ရဲ့ Environment သည် Stochastic ဖြစ်ပြီး probability တွေပဲဖြစ်တယ်။ ( Environment )
     - သူ့ရဲ့ Behavior ကတော့ state by state ( Auto ) သွားတာဖြစ်ပါတယ်။ ( Behavior )
 
@@ -42,17 +44,19 @@
     - sequence of actions မှာလဲ အဲ့လို မသေချာမှုရှိနိုင်တယ်။
     - ဒီ model သည် One Step Decision Model ဖြစ်ပါတယ်။ ( current state ပေါ်မူတည်ပြီး action ကို တွက်တာ )
     - Memory Less ( Markov Properties ) history အားလုံးကို လိုက်ကြည့်မနေဘဲ current state ကို ရောက်နေချိန်မှာ best actions ကို ဒီမှာပဲလုပ်မှာ။ လက်ရှိဘာလုပ်ရမလဲဆိုတာပဲ အာရုံစိုက်။ stochastic outcome မို့လို fixed plan လိုမဟုတ်ဘဲ policy နဲ့ပဲထိန်းတယ်။ မှားခဲ့ရင်လည်း current ရောက်နေတဲ့ နေရာကပဲဆက်တွက်ပြီး goal ကို ဆက်သွားတယ်။
+    - MDP Policy က current state ပေါ်မူတည်ပီးဘဲ goal ကိုဘယ်လိုရောက်နိုင်မလဲ တွက်ချက်နေတာ
 
 - #### MDP Rewards
     - Immediate Rewards vs Delayed Rewards
     - Agent က Action ကို ချက်ချင်း change လုပ်လိုက်တာကြောင့် Immediate rewards ရသွားတယ်။ s' ရောက်သွားတယ်ပေါ့။ တကယ့် real world မှာ agent ရဲ့ လက်ရှိ လုပ်ဆောင်ချက်ဟာ မှန်နေတယ်/မှားနေတယ် ပြောလို့မရဘူး။ နောက်ပိုင်းမှာ ကြည့်ပြီး သိသာနိုင်တာပါ။
+    - Agent က မှန်လား/မှားလားသိဖို့ကို long term vs short term လိုအပ်တယ်။
     - Agent သည် Delayed feedback ကနေ learning လုပ်ရမှာဖြစ်ပါတယ်၊
     - Temporal Credit Assignment ( value function, policy gradient, exp replay )
 
 - #### Living Rewards vs Terminal Rewards
     - Living Rewards -> robot က stage 1 start နေရာကနေ stage 2 ကို သွားဖို့ reward = +2 ပေးလိုက်မယ်။ အဲ့ပမာဏ က များတယ်။ goal ရောက်တဲ့အချိန်မှာ reward = 1 ပဲရှိတာကိုး။ ဒါပေမဲ့လဲ reward များချင်တဲ့အတွက်ပေးလိုက်ရတာ။ အဲ့တော့ goal ( reward = 1 ), fail ( reward = -1 ) နေရာတွေကို ရှောင်သွားနိုင်တဲ့ case ရှိလာနိုင်တယ်။ ဒါကို Counter Intuitive Reset လို့ခေါ်တယ်။ reward က တိုးပြီးရင်းတိုးလာတာမို့လို့ goal ကျတော့် +1 ဆိုတော့ နည်းနေတယ် ဆိုတော့ မသွားချင်ဘူးပေါ့။ ဥပမာ first row, third column နေရာမှာဆိုရင် (3,3) ဖြစ်တယ်ဆိုတော့ goal နေရာ reward =1 ကို မသွားချင်ဘဲ reward = 3 နေရာကိုဘဲ သွားချင်နေမှာပေါ့။ အဲ့လိုပဲ second row, third column မှာဆိုလည်း နံရံကိုတိုက် ညာပြန်ရွှေ့ပြီး +2 reward ကို ထပ်ယူပြီး  အပေါ်ဘဲတက်ချင်နေမှာပဲ။ 
     - သဘောက agent သည် game ကို ပြီးအောင် မကစားဘဲ အမှတ်တွေပဲ ပတ်ယူနေသလို ဖြစ်နေနိုင်တယ်။ ဒါက Positive Living Rewards ပေါ့။
-    - နောက်ထပ် အမြင်တခုက Negative Positive Rewards ဆက်တိုက် ရနေမယ်ဆို agent  ဟာ game ကို အမြန်ဆုံးပြီးအောင် ကစားပါလိမ့်မယ်။
+    - နောက်ထပ် အမြင်တခုက Negative Living Rewards ဆက်တိုက် ရနေမယ်ဆို agent  ဟာ game ကို အမြန်ဆုံးပြီးအောင် ကစားပါလိမ့်မယ်။
     - Grid world  R(s) = +2
     - +2 ဆိုတော့ game ကို အဆုံးသတ်ရောက်အောင် မကစားတော့ပဲ reward တွေပဲပါတ်ယူနေမဲ့သဘောပေါ့။ 
     - Terminal Rewards ကတော့ goal နဲ့ success နေရာကကောင်တွေပါ။
