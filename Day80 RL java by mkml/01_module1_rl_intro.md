@@ -1,10 +1,14 @@
 ### psa summarized
-- #### agent, environment, action, state, reward
+- #### trial & error, learning from consequences, optimal strategy(policy), agent, environment, action, state, reward,
+- #### application of RL 
+    - ![alt text](image-1.png)
 - #### grid world
+    - ![alt text](image-3.png)
 - #### stochastic grid world
     - Grid world with Probability
+    - ![alt text](image-4.png)
     - uncertainty
-- #### Exploration & Exploitation
+- #### Exploration & Exploitation 
     - agent အနေနဲ့ အောက်က နှစ်ခုထဲက တခု လုပ်ဖို့လိုတယ်။
     - ရှာဖွေခြင်း action အသစ်ပြုလုပ်ခြင်း ( exploration ) ( ဘီယာဆိုင် အသစ်ရှာဖွေခြင်း )
     - ရှိပြီးသား resource က နေ knowledge ရယူခြင်း ( Exploitation ) ( သိပြီးသား Beer ဆိုင်များမှ ရယူခြင်း )
@@ -33,3 +37,5 @@
     - java ထည့် , maven ထည့်, apache maven bin path ကို $PATH ထဲထည့်
     - လိုမှ install လုပ်ပါ။
 - #### Summary
+    - environment နဲ့ interaction လုပ်တဲ့ process
+    

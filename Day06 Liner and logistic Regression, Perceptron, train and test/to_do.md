@@ -28,7 +28,7 @@
 
 - [[ Heart Disease Dataset ]](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset): လူနာရဲ့ ကျန်းမာရေးအချက်အလက်တွေကြည့်ပြီး နှလုံးရောဂါ ဖြစ်နိုင်ခြေ ရှိမရှိကို ခန့်မှန်းရပါတယ်。
 
-- [[ Customer Churn Prediction Dataset ]]https://www.kaggle.com/datasets/rashadrmammadov/customer-churn-dataset: ဘဏ် ဒါမှမဟုတ် တယ်လီကွန်းသုံးစွဲသူတွေက ဝန်ဆောင်မှုကို ဆက်သုံးမှာလား၊ ရပ်ဆိုင်းတော့မှာလား (Churn) ဆိုတာကို ခွဲခြားဖို့ပါ。
+- [[ Customer Churn Prediction Dataset ]](https://www.kaggle.com/datasets/rashadrmammadov/customer-churn-dataset): ဘဏ် ဒါမှမဟုတ် တယ်လီကွန်းသုံးစွဲသူတွေက ဝန်ဆောင်မှုကို ဆက်သုံးမှာလား၊ ရပ်ဆိုင်းတော့မှာလား (Churn) ဆိုတာကို ခွဲခြားဖို့ပါ。
 
 #### နမူနာ code
 - [[ Social Network Ads Dataset ]](https://www.kaggle.com/datasets/rakeshrau/social-network-ads): လူတစ်ယောက်ရဲ့ အသက်နဲ့ ဝင်ငွေအပေါ် မူတည်ပြီး လူမှုကွန်ရက်ပေါ်က ကြော်ငြာကို ကြည့်ပြီး ပစ္စည်းဝယ်မဝယ် ခန့်မှန်းရတာ ဖြစ်ပါတယ်。
