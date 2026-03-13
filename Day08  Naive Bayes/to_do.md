@@ -7,7 +7,7 @@
 
 - [[Bank Customer Churn Prediction]](https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction): ဘဏ်ဖောက်သည်များ ဆက်လက်အသုံးပြုခြင်း ရှိ၊ မရှိကို ခန့်မှန်းရသည့် dataset ဖြစ်သည်။ Geography နှင့် Gender ကဲ့သို့သော Category features များအတွက် Categorical NB ကို လည်းကောင်း၊ အသက် (Age) နှင့် လက်ကျန်ငွေ (Balance) ကဲ့သို့သော Continuous features များအတွက် Gaussian NB ကို လည်းကောင်း ပေါင်းစပ်အသုံးပြုနိုင်ပါသည်။
 
-- [[Spam Email Dataset]](https://www.kaggle.com/datasets/abdmental01/email-spam-dedection): အီးမေးလ်များအတွင်းရှိ စကားလုံးများ၏ အကြိမ်ရေ (Word frequencies) ကို အခြေခံထားသည့် CSV dataset ဖြစ်သည်။ Multinomial Naive Bayes ကို အသုံးပြု၍ Spam နှင့် Ham (သာမန်အီးမေးလ်) ကို အမြန်ဆုံးနှင့် အတိကျဆုံး ခွဲခြားနိုင်ပါသည်။
+- [[Spam Email Datasethttps://www.kaggle.com/datasets/abdmental01/email-spam-dedection]](): အီးမေးလ်များအတွင်းရှိ စကားလုံးများ၏ အကြိမ်ရေ (Word frequencies) ကို အခြေခံထားသည့် CSV dataset ဖြစ်သည်။ Multinomial Naive Bayes ကို အသုံးပြု၍ Spam နှင့် Ham (သာမန်အီးမေးလ်) ကို အမြန်ဆုံးနှင့် အတိကျဆုံး ခွဲခြားနိုင်ပါသည်။
 
 - [[COVID-19 Patient Health Dataset]](https://www.kaggle.com/datasets/meirnizri/covid19-dataset): ဤ dataset တွင် လူနာများ၏ နောက်ခံရောဂါအခြေအနေများနှင့် ဆေးရုံတက်ရမှု အချက်အလက်များ ပါဝင်သည်။ ရောဂါလက္ခဏာ ရှိ/မရှိ (Binary features) များအတွက် Bernoulli NB ကို လည်းကောင်း၊ အသက် (Age) ကဲ့သို့သော Continuous data များအတွက် Gaussian NB ကို လည်းကောင်း အသုံးပြု၍ လူနာ၏ အခြေအနေ စိုးရိမ်ရမှု ရှိ/မရှိကို ခန့်မှန်းနိုင်ပါသည်
 
