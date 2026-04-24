@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['5_L - v6 5_new_blur', 'testingground_3.0 - v1 2023-06-11 9-23pm']
+
+roboflow:
+  workspace: shins-workspace-grzqk
+  project: hands-detection-hknbq-jenu1
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/shins-workspace-grzqk/hands-detection-hknbq-jenu1/dataset/1
